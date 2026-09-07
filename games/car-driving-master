@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- 引入 jQuery（GameMonetize 视频脚本核心依赖） -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Google tag (gtag.js) - 全局分析代码 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2JFJSE3ENE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2JFJSE3ENE');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO 核心标签 -->
+  <title>Play Car Driving Master Online - Free Unblocked Game on Y8Games</title>
+  <meta name="description" content="Play Car Driving Master online for free on Y8Games! Drive various vehicles through challenging tracks, master precision driving, earn rewards, and upgrade your dream cars in this exciting 3D driving game.">
+  <meta name="keywords" content="y8games, y8 games, car driving master, driving games, car games, racing games, free online games, unblocked games, browser games">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://y8games.top/games/car-driving-master.html">
+
+  <!-- AdSense 广告代码脚本 -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7325130017318424" crossorigin="anonymous"></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    
+    /* 全局背景：叠加喜乐暗淡 Emoji 细条纹图案 */
+    body { 
+      background-color: #f7f6f1; 
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='240'%3E%3Ctext x='10' y='30' font-size='20' opacity='0.08'%3E🎮%3C/text%3E%3Ctext x='70' y='60' font-size='20' opacity='0.08'%3E😃%3C/text%3E%3Ctext x='20' y='110' font-size='20' opacity='0.08'%3E🥳%3C/text%3E%3Ctext x='80' y='140' font-size='20' opacity='0.08'%3E🎯%3C/text%3E%3Ctext x='15' y='190' font-size='20' opacity='0.08'%3E🎲%3C/text%3E%3Ctext x='75' y='220' font-size='20' opacity='0.08'%3E✨%3C/text%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-attachment: fixed;
+      color: #333; 
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
+      line-height: 1.5;
+    }
+
+    /* 容器控制在 1000px 中等最佳宽度 */
+    .container { 
+      width: 90%;
+      max-width: 1000px; 
+      margin: 0 auto; 
+      padding: 15px 0; 
+    }
+
+    /* 顶部 Navbar 导航 */
+    header { 
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px; 
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eaeaea;
+    }
+    header .logo { 
+      font-size: 1.8rem; 
+      font-weight: 900; 
+      color: #ff4757; 
+      text-decoration: none; 
+      letter-spacing: 1px; 
+    }
+    header .logo span { color: #ffa502; }
+    header h1 { 
+      font-size: 1.4rem; 
+      font-weight: bold; 
+      color: #333; 
+    }
+
+    /* 自适应游戏窗口控制 */
+    .game-wrapper {
+      position: relative;
+      width: 100%;
+      height: 60vh; /* 占屏幕高度的 60% */
+      max-height: 650px;
+      min-height: 400px;
+      background: #000;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .game-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
+
+    /* 广告占位槽 */
+    .custom-ad-slot { 
+      margin: 15px 0; 
+      text-align: center; 
+      min-height: 90px; 
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px dashed #ddd;
+    }
+
+    /* 文章与文本介绍排版 */
+    .article-section { 
+      max-width: 850px;
+      margin: 15px auto 0 auto;
+      background: #ffffff; 
+      padding: 25px; 
+      border-radius: 12px; 
+      border: 1px solid #eaeaea;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .article-section h2 { 
+      font-size: 1.2rem; 
+      margin-top: 20px; 
+      margin-bottom: 8px; 
+      color: #ff4757; 
+      border-bottom: 1px solid #eee;
+      padding-bottom: 4px;
+    }
+    .article-section h2:first-of-type {
+      margin-top: 0;
+    }
+    .article-section p { 
+      font-size: 0.95rem; 
+      color: #555; 
+      margin-bottom: 10px; 
+    }
+
+    /* 视频播放器外层独立渲染环境与触控修复 */
+    #gamemonetize-video-container {
+      position: relative;
+      width: 100%;
+      height: 480px;
+      max-height: 60vh;
+      background: #000;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-top: 15px;
+      isolation: isolate; /* 创建独立 Stacking Context，防止外部 CSS 阻挡按钮层级 */
+    }
+
+    #gamemonetize-video, 
+    #gamemonetize-video-container iframe {
+      width: 100% !important;
+      height: 100% !important;
+      border: none !important;
+      pointer-events: auto !important;
+      touch-action: manipulation !important;
+    }
+
+    footer { 
+      text-align: center; 
+      padding: 25px 0; 
+      font-size: 0.85rem; 
+      color: #7f8c8d; 
+    }
+    footer a { color: #333; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <a href="/" class="logo">Y8<span>GAMES</span></a>
+      <h1>Car Driving Master</h1>
+    </header>
+
+    <!-- 位置：自定义广告位 A（游戏上方） -->
+    <div class="custom-ad-slot" id="ad-slot-top">
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-7325130017318424"
+           data-ad-slot="YOUR_AD_SLOT_ID"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+      <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    </div>
+
+    <!-- 位置：Car Driving Master 游戏窗口 -->
+    <div class="game-wrapper">
+      <iframe src="https://html5.gamemonetize.games/xk1nqd29lfgovjgpt417nfaonvul8fi2/" title="Car Driving Master" scrolling="no" allowfullscreen></iframe>
+    </div>
+
+    <article class="article-section">
+      <h2>How to Play Car Driving Master</h2>
+      <p>Welcome to Car Driving Master! Step behind the wheel and test your driving precision across challenging courses. Maneuver through tight spaces, avoid obstacles, and complete parking and driving missions to unlock new vehicles!</p>
+
+      <h2>Controls & Gameplay</h2>
+      <p>Use <strong>W, A, S, D</strong> or the <strong>Arrow Keys</strong> to steer, accelerate, and brake. On mobile devices, use the intuitive on-screen touch controls to drive.</p>
+      <p>Master tight turns, practice smooth braking, and complete levels to earn rewards to upgrade your cars. Watch the video walkthrough below for helpful tips and gameplay strategies!</p>
+
+      <!-- 视频演示完整模块 -->
+      <h2>Video Walkthrough</h2>
+      <div id="gamemonetize-video-container">
+        <div id="gamemonetize-video"></div>
+      </div>
+
+      <script type="text/javascript">
+         window.VIDEO_OPTIONS = {
+             gameid : "xk1nqd29lfgovjgpt417nfaonvul8fi2",
+             width  : "100%",
+             height : "100%",
+             color  : "#3f007e",
+             getkids : "false"
+         };
+         (function (a, b, c) {
+            var d = a.getElementsByTagName(b)[0];
+            a.getElementById(c) || (a = a.createElement(b), a.id = c, a.src = "https://api.gamemonetize.com/video.js", d.parentNode.insertBefore(a, d))
+         })(document, "script", "gamemonetize-video-api"); 
+      </script>
+    </article>
+
+    <footer>
+      <p>&copy; 2026 Y8Games. All rights reserved. | <a href="https://y8games.top">y8games.top</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
