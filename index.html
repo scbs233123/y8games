@@ -99,36 +99,29 @@
     }
     .nav-links a:hover { color: #ff4757; }
 
-    /* === 新增：游戏分类导航栏 CSS === */
+    /* === 新增：游戏分类栏样式 === */
     .category-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
       margin-bottom: 15px;
-      overflow-x: auto;
-      padding-bottom: 5px;
-      scrollbar-width: thin; /* 兼容移动端/窄屏横向滚动 */
     }
 
     .category-item {
-      flex: 1;
-      min-width: 100px;
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 6px;
+      gap: 8px;
       background: #ffffff;
       border: 1px solid #eaeaea;
-      padding: 10px 14px;
+      padding: 12px 10px;
       border-radius: 8px;
       text-decoration: none;
       color: #333;
-      font-size: 0.9rem;
       font-weight: 700;
+      font-size: 0.95rem;
       box-shadow: 0 2px 4px rgba(0,0,0,0.03);
       transition: all 0.2s ease;
-      white-space: nowrap;
     }
 
     .category-item:hover {
@@ -221,6 +214,12 @@
     }
     footer a { color: #333; text-decoration: underline; }
 
+    @media (max-width: 768px) {
+      .category-bar {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+      }
+    }
+
     @media (max-width: 600px) {
       .welcome-text { display: none; }
     }
@@ -229,7 +228,6 @@
 <body>
 
   <div class="container">
-    <!-- 主 H1 标签，利于搜索引擎识别整站核心定位 -->
     <h1 class="visually-hidden">Funny Game Box - Play Free Online Unblocked Games</h1>
 
     <header>
@@ -244,13 +242,13 @@
       </nav>
     </header>
 
-    <!-- === 新增：游戏类型分类栏 (在 Header 下方、广告位上方) === -->
+    <!-- === 新增：红框区域对应的游戏分类导航栏 === -->
     <nav class="category-bar">
-      <a href="/category/action.html" class="category-item">
-        <span>⚔️</span> Action
-      </a>
       <a href="/category/shooting.html" class="category-item">
         <span>🎯</span> Shooting
+      </a>
+      <a href="/category/casual.html" class="category-item">
+        <span>🎲</span> Casual
       </a>
       <a href="/category/driving.html" class="category-item">
         <span>🚗</span> Driving
@@ -258,8 +256,8 @@
       <a href="/category/puzzle.html" class="category-item">
         <span>🧩</span> Puzzle
       </a>
-      <a href="/category/arcade.html" class="category-item">
-        <span>🕹️</span> Arcade
+      <a href="/category/action.html" class="category-item">
+        <span>⚔️</span> Action
       </a>
     </nav>
 
@@ -371,7 +369,6 @@
 
     </div>
 
-    <!-- 补充首页文字性背景，破除 Thin Content，利于 AdSense 审核与收录 -->
     <section class="about-section" id="about">
       <h2>About Funny Game Box</h2>
       <p>Welcome to <strong>Funny Game Box</strong>, your ultimate destination for playing the best free online games and unblocked mini games! We offer a wide variety of HTML5 browser games including action, driving, puzzle, shooting, and 2-player games that you can play instantly on desktop, tablet, or mobile devices.</p>
