@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-SNGPZK3CYM"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-SNGPZK3CYM');
   </script>
 
@@ -23,21 +20,19 @@
   <link rel="canonical" href="https://funnygamebox.net/">
 
   <!-- AdSense 广告脚本 -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxx" crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7325130017318424" crossorigin="anonymous"></script>
 
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     
-    /* 全局背景：叠加喜乐暗淡 Emoji 细条纹图案 */
     body { 
       background-color: #f7f6f1; 
-      /* 使用包含喜乐 Emoji (🎮😃🥳🎯🎲🚀✨⭐) 的 SVG 无缝平铺背景 */
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='240'%3E%3Ctext x='10' y='30' font-size='20' opacity='0.08'%3E🎮%3C/text%3E%3Ctext x='70' y='60' font-size='20' opacity='0.08'%3E😃%3C/text%3E%3Ctext x='20' y='110' font-size='20' opacity='0.08'%3E🥳%3C/text%3E%3Ctext x='80' y='140' font-size='20' opacity='0.08'%3E🎯%3C/text%3E%3Ctext x='15' y='190' font-size='20' opacity='0.08'%3E🎲%3C/text%3E%3Ctext x='75' y='220' font-size='20' opacity='0.08'%3E✨%3C/text%3E%3C/svg%3E");
       background-repeat: repeat;
-      background-attachment: fixed; /* 固定背景，滚动时更有质感 */
+      background-attachment: fixed;
       color: #333; 
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
-      line-height: 1.5;
+      line-height: 1.6;
     }
 
     .container { 
@@ -47,7 +42,18 @@
       padding: 15px 0; 
     }
 
-    /* 顶部 Navbar 与欢迎标语样式 */
+    /* 视障/SEO 专属 H1 隐藏样式 */
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      padding: 0;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
     header { 
       display: flex;
       justify-content: space-between;
@@ -93,7 +99,6 @@
     }
     .nav-links a:hover { color: #ff4757; }
 
-    /* 广告位 */
     .custom-ad-slot { 
       margin: 15px 0; 
       text-align: center; 
@@ -109,7 +114,6 @@
       color: #222;
     }
 
-    /* 游戏卡片网格 */
     .game-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -143,8 +147,8 @@
       padding: 10px;
       text-align: center;
     }
-    .game-card h3 {
-      font-size: 1rem;
+    .game-card .game-title {
+      font-size: 0.95rem;
       font-weight: 700;
       color: #333;
       white-space: nowrap;
@@ -152,14 +156,22 @@
       text-overflow: ellipsis;
     }
 
-    /* 底部保留容器 */
-    .reserved-section {
+    .about-section {
       background: #ffffff;
-      padding: 20px;
+      padding: 25px;
       border-radius: 12px;
       border: 1px solid #eaeaea;
       margin-top: 30px;
-      min-height: 80px;
+    }
+    .about-section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .about-section p {
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 10px;
     }
 
     footer { 
@@ -178,6 +190,9 @@
 <body>
 
   <div class="container">
+    <!-- 主 H1 标签，利于搜索引擎识别整站核心定位 -->
+    <h1 class="visually-hidden">Funny Game Box - Play Free Online Unblocked Games</h1>
+
     <header>
       <div class="brand-zone">
         <a href="/" class="logo">FUNNY<span>GAMEBOX</span></a>
@@ -205,119 +220,109 @@
     <h2 class="section-title" id="popular">Trending Games</h2>
     <div class="game-grid">
       
-      <!-- Taxi Rush -->
       <a href="/games/taxi-rush.html" class="game-card">
-        <img src="https://img.gamemonetize.com/5jzzwvgh5ljmtvgawdsjtio83tpqry6f/512x512.jpg" alt="Taxi Rush">
+        <img src="https://img.gamemonetize.com/5jzzwvgh5ljmtvgawdsjtio83tpqry6f/512x512.jpg" alt="Play Taxi Rush Online">
         <div class="info">
-          <h3>Taxi Rush</h3>
+          <p class="game-title">Taxi Rush</p>
         </div>
       </a>
 
-      <!-- Haunted House Idle -->
       <a href="/games/haunted-house-idle.html" class="game-card">
-        <img src="https://img.gamemonetize.com/ie1waj72yh5f8p95mhefx770jwssxk8l/512x512.jpg" alt="Haunted House Idle">
+        <img src="https://img.gamemonetize.com/ie1waj72yh5f8p95mhefx770jwssxk8l/512x512.jpg" alt="Play Haunted House Idle Online">
         <div class="info">
-          <h3>Haunted House Idle</h3>
+          <p class="game-title">Haunted House Idle</p>
         </div>
       </a>
 
-      <!-- Car Driving Master -->
       <a href="/games/car-driving-master.html" class="game-card">
-        <img src="https://img.gamemonetize.com/xk1nqd29lfgovjgpt417nfaonvul8fi2/512x512.jpg" alt="Car Driving Master">
+        <img src="https://img.gamemonetize.com/xk1nqd29lfgovjgpt417nfaonvul8fi2/512x512.jpg" alt="Play Car Driving Master Online">
         <div class="info">
-          <h3>Car Driving Master</h3>
+          <p class="game-title">Car Driving Master</p>
         </div>
       </a>
 
-      <!-- granny-house -->
       <a href="/games/granny-house.html" class="game-card">
-        <img src="https://img.gamemonetize.com/mg0x8a9pu4vghvwaxs0n94tfwakwufpg/512x512.jpg" alt="granny-house-game">
+        <img src="https://img.gamemonetize.com/mg0x8a9pu4vghvwaxs0n94tfwakwufpg/512x512.jpg" alt="Play Granny House Online">
         <div class="info">
-          <h3>Granny House</h3>
+          <p class="game-title">Granny House</p>
         </div>
       </a>
 
-      <!-- Scary Granny -->
       <a href="/games/scary-granny.html" class="game-card">
-        <img src="https://img.gamemonetize.com/i35ipo13fha7y40orjryy7ylg8drtfmb/512x512.jpg" alt="Scary Granny">
+        <img src="https://img.gamemonetize.com/i35ipo13fha7y40orjryy7ylg8drtfmb/512x512.jpg" alt="Play Scary Granny Online">
         <div class="info">
-          <h3>Scary Granny</h3>
+          <p class="game-title">Scary Granny</p>
         </div>
       </a>
 
-      <!-- Agent Smith -->
       <a href="/games/agent-smith.html" class="game-card">
-        <img src="https://img.gamemonetize.com/dbzyobfhfwzhayry36u000k1b7kmdcmr/512x512.jpg" alt="Agent Smith">
+        <img src="https://img.gamemonetize.com/dbzyobfhfwzhayry36u000k1b7kmdcmr/512x512.jpg" alt="Play Agent Smith Online">
         <div class="info">
-          <h3>Agent Smith</h3>
+          <p class="game-title">Agent Smith</p>
         </div>
       </a>
 
-      <!-- Pixel Zombie Base Defense -->
       <a href="/games/pixel-zombie-base-defense.html" class="game-card">
-        <img src="https://img.gamemonetize.com/6d8mfbgq1mufwyuumccji7jnrhh00h8g/512x384.jpg" alt="Pixel Zombie Base Defense">
+        <img src="https://img.gamemonetize.com/6d8mfbgq1mufwyuumccji7jnrhh00h8g/512x384.jpg" alt="Play Pixel Zombie Base Defense">
         <div class="info">
-          <h3>Pixel Zombie Base Defense</h3>
+          <p class="game-title">Pixel Zombie Base Defense</p>
         </div>
       </a>
 
-      <!-- Wuggy shooting Gun - Poppy -->
       <a href="/games/wuggy-shooting-gun-poppy.html" class="game-card">
-        <img src="https://img.gamemonetize.com/hrc5sej0oydrd9ul7bed29pccifdn810/512x384.jpg" alt="Wuggy shooting Gun - Poppy">
+        <img src="https://img.gamemonetize.com/hrc5sej0oydrd9ul7bed29pccifdn810/512x384.jpg" alt="Play Wuggy Shooting Gun">
         <div class="info">
-          <h3>Wuggy Shooting Gun</h3>
+          <p class="game-title">Wuggy Shooting Gun</p>
         </div>
       </a>
 
-      <!-- Heaven & Hell Idle -->
-      <a href="/games/heaven-&-Hell-Idle.html" class="game-card">
-        <img src="https://img.gamemonetize.com/hlanibeqmv6mkc11pew6lbeh20ix5ms2/512x384.jpg" alt="Heaven & Hell Idle">
+      <!-- 修复了原本 URL 中的非法字符与大写字母 -->
+      <a href="/games/heaven-and-hell-idle.html" class="game-card">
+        <img src="https://img.gamemonetize.com/hlanibeqmv6mkc11pew6lbeh20ix5ms2/512x384.jpg" alt="Play Heaven and Hell Idle">
         <div class="info">
-          <h3>Heaven & Hell Idle</h3>
+          <p class="game-title">Heaven &amp; Hell Idle</p>
         </div>
       </a>
 
-      <!-- survival-craft -->
       <a href="/games/survival-craft.html" class="game-card">
-        <img src="https://img.gamemonetize.com/nkq351xyqdf5aqk9m4j3wq3t0k9qjh36/512x384.jpg" alt="survival-craft">
+        <img src="https://img.gamemonetize.com/nkq351xyqdf5aqk9m4j3wq3t0k9qjh36/512x384.jpg" alt="Play Survival Craft Online">
         <div class="info">
-          <h3>Survival Craft</h3>
+          <p class="game-title">Survival Craft</p>
         </div>
       </a>
 
-      <!-- shadowgun-war -->
       <a href="/games/shadowgun-war.html" class="game-card">
-        <img src="https://img.gamemonetize.com/7ti5d19e7syonvvsmruhb36ph9mmzihp/512x384.jpg" alt="shadowgun-war">
+        <img src="https://img.gamemonetize.com/7ti5d19e7syonvvsmruhb36ph9mmzihp/512x384.jpg" alt="Play Shadowgun War Online">
         <div class="info">
-          <h3>Shadowgun War</h3>
+          <p class="game-title">Shadowgun War</p>
         </div>
       </a>
 
-      <!-- counter-craft -->
       <a href="/games/counter-craft.html" class="game-card">
-        <img src="https://img.gamemonetize.com/j6doy20k2ti3aa0vea8g77f14q1vibg1/512x384.jpg" alt="counter-craft">
+        <img src="https://img.gamemonetize.com/j6doy20k2ti3aa0vea8g77f14q1vibg1/512x384.jpg" alt="Play Counter Craft Online">
         <div class="info">
-          <h3>Counter Craft</h3>
+          <p class="game-title">Counter Craft</p>
         </div>
       </a>
 
-      <!-- Deeper Crystal Descent -->
       <a href="/games/deeper-crystal-descent.html" class="game-card">
-        <img src="https://img.gamemonetize.com/a7ul0cx318ja0p3b3wucgdaopfospqcz/512x384.jpg" alt="Deeper Crystal Descent">
+        <img src="https://img.gamemonetize.com/a7ul0cx318ja0p3b3wucgdaopfospqcz/512x384.jpg" alt="Play Deeper Crystal Descent">
         <div class="info">
-          <h3>Deeper Crystal Descent</h3>
+          <p class="game-title">Deeper Crystal Descent</p>
         </div>
       </a>
 
     </div>
 
-    <!-- 底部保留空白区域容器 -->
-    <section class="reserved-section" id="about">
-      <!-- 预留区域 -->
+    <!-- 补充首页文字性背景，破除 Thin Content，利于 AdSense 审核与收录 -->
+    <section class="about-section" id="about">
+      <h2>About Funny Game Box</h2>
+      <p>Welcome to <strong>Funny Game Box</strong>, your ultimate destination for playing the best free online games and unblocked mini games! We offer a wide variety of HTML5 browser games including action, driving, puzzle, shooting, and 2-player games that you can play instantly on desktop, tablet, or mobile devices.</p>
+      <p>All games on Funny Game Box are 100% free with no downloads, installs, or registration required. Bookmark our site and enjoy seamless gaming anytime, anywhere!</p>
     </section>
 
     <footer>
-      <p>&copy; 2026 Funny Game Box. All rights reserved. | <a href="https://funnygamebox.net">funnygamebox.net</a></p>
+      <p>&copy; 2026 Funny Game Box. All rights reserved. | <a href="https://funnygamebox.net/">funnygamebox.net</a></p>
     </footer>
   </div>
 
