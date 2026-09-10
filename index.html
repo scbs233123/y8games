@@ -58,7 +58,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-bottom: 20px; 
+      margin-bottom: 15px; 
       padding-bottom: 15px;
       border-bottom: 1px solid #eaeaea;
       flex-wrap: wrap;
@@ -98,6 +98,45 @@
       font-size: 0.95rem;
     }
     .nav-links a:hover { color: #ff4757; }
+
+    /* === 新增：游戏分类导航栏 CSS === */
+    .category-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 15px;
+      overflow-x: auto;
+      padding-bottom: 5px;
+      scrollbar-width: thin; /* 兼容移动端/窄屏横向滚动 */
+    }
+
+    .category-item {
+      flex: 1;
+      min-width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      background: #ffffff;
+      border: 1px solid #eaeaea;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #333;
+      font-size: 0.9rem;
+      font-weight: 700;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .category-item:hover {
+      border-color: #ff4757;
+      color: #ff4757;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 10px rgba(255, 71, 87, 0.15);
+    }
 
     .custom-ad-slot { 
       margin: 15px 0; 
@@ -205,6 +244,25 @@
       </nav>
     </header>
 
+    <!-- === 新增：游戏类型分类栏 (在 Header 下方、广告位上方) === -->
+    <nav class="category-bar">
+      <a href="/category/action.html" class="category-item">
+        <span>⚔️</span> Action
+      </a>
+      <a href="/category/shooting.html" class="category-item">
+        <span>🎯</span> Shooting
+      </a>
+      <a href="/category/driving.html" class="category-item">
+        <span>🚗</span> Driving
+      </a>
+      <a href="/category/puzzle.html" class="category-item">
+        <span>🧩</span> Puzzle
+      </a>
+      <a href="/category/arcade.html" class="category-item">
+        <span>🕹️</span> Arcade
+      </a>
+    </nav>
+
     <!-- 顶部广告位 -->
     <div class="custom-ad-slot">
       <ins class="adsbygoogle"
@@ -276,7 +334,6 @@
         </div>
       </a>
 
-      <!-- 修复了原本 URL 中的非法字符与大写字母 -->
       <a href="/games/heaven-and-hell-idle.html" class="game-card">
         <img src="https://img.gamemonetize.com/hlanibeqmv6mkc11pew6lbeh20ix5ms2/512x384.jpg" alt="Play Heaven and Hell Idle">
         <div class="info">
