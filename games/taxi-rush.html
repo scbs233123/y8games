@@ -49,34 +49,50 @@
       padding: 15px 0; 
     }
 
-    /* 顶部 Navbar 导航 */
+    /* 📌 重构后的 Logo Header 导航栏 */
     header { 
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px; 
-      padding-bottom: 10px;
-      border-bottom: 1px solid #eaeaea;
+      padding: 12px 20px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: 1px solid #eaeaea;
     }
     header .logo { 
-      font-size: 1.6rem; 
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.3rem; 
       font-weight: 900; 
       color: #ff4757; 
       text-decoration: none; 
-      letter-spacing: 0.5px; 
+      letter-spacing: -0.5px; 
+      text-transform: uppercase;
     }
-    header .logo span { color: #ffa502; }
+    header .logo-icon {
+      background: #ff4757;
+      color: #fff;
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 1.1rem;
+    }
+    header .logo span { 
+      color: #ffa502; 
+    }
     header h1 { 
-      font-size: 1.4rem; 
+      font-size: 1.1rem; 
       font-weight: bold; 
-      color: #333; 
+      color: #666; 
     }
 
     /* 自适应游戏窗口控制 */
     .game-wrapper {
       position: relative;
       width: 100%;
-      height: 60vh; /* 占屏幕高度的 60% */
+      height: 60vh;
       max-height: 650px;
       min-height: 400px;
       background: #000;
@@ -142,7 +158,7 @@
       border-radius: 8px;
       overflow: hidden;
       margin-top: 15px;
-      isolation: isolate; /* 创建独立 Stacking Context */
+      isolation: isolate;
     }
 
     #gamemonetize-video, 
@@ -166,9 +182,12 @@
 <body>
 
   <div class="container">
+    <!-- 📌 Funny Game Box Logo Header -->
     <header>
-      <!-- 修改为 Funny Game Box Logo -->
-      <a href="/" class="logo">FUNNY<span>GAME BOX</span></a>
+      <a href="/" class="logo">
+        <span class="logo-icon">📦</span>
+        FUNNY<span>GAME BOX</span>
+      </a>
       <h1>Taxi Rush</h1>
     </header>
 
@@ -188,8 +207,7 @@
       <iframe src="https://html5.gamemonetize.games/5jzzwvgh5ljmtvgawdsjtio83tpqry6f//" title="Taxi Rush" scrolling="no" allowfullscreen></iframe>
     </div>
 
-    <!-- 📌 位置 4：自定义广告位 B（游戏下方） -->
-   
+    <!-- 📌 位置 4：文章与文本区域 -->
     <article class="article-section">
       <h2>How to Play Taxi Rush on Funny Game Box</h2>
       <p>You are a taxi driver navigating through busy city streets, responsible for safely delivering passengers to their destinations. Doing so earns you money to upgrade your vehicle or purchase brand-new cars!</p>
