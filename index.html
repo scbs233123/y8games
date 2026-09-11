@@ -71,13 +71,31 @@
       gap: 12px;
     }
     
+    /* 📌 图形化 Logo 样式 */
     header .logo { 
-      font-size: 1.8rem; 
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1.7rem; 
       font-weight: 900; 
       color: #ff4757; 
       text-decoration: none; 
-      letter-spacing: 1px; 
+      letter-spacing: 0.5px; 
     }
+
+    /* 类似图2的红色圆角图标背景 */
+    header .logo .logo-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 36px;
+      background-color: #ff4757;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      line-height: 1;
+    }
+
     header .logo span { color: #ffa502; }
 
     .welcome-text {
@@ -232,7 +250,11 @@
 
     <header>
       <div class="brand-zone">
-        <a href="/" class="logo">FUNNYGAME<span>BOX</span></a>
+        <!-- 📌 匹配图 2 样式的 Logo HTML -->
+        <a href="/" class="logo">
+          <span class="logo-icon">📦</span>
+          FUNNY <span>GAME BOX</span>
+        </a>
         <span class="welcome-text">🎮 Welcome to Funny Game Box! Play Best Free Browser Games Online! 🔥</span>
       </div>
       <nav class="nav-links">
