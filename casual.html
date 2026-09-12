@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casual Games - Funny Game Box</title>
-    <meta name="description" content="Play the best free online casual games on Funny Game Box. Enjoy instant browser games anytime!">
-    <!-- 如果有全局样式文件，请保留原有的 css 引入；若采用内联/无框架样式，本页面继承首页全部结构 -->
-    <link rel="stylesheet" href="style.css"> <!-- 如有 style.css 请取消注释或保留首页的 link -->
+    <meta name="description" content="Play the best free online casual games on Funny Game Box. Play instant HTML5 browser games anytime!">
+    <!-- 全局样式文件引入 -->
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <!-- 顶部提示栏 -->
+    <!-- 1. 顶部公告栏 -->
     <header class="top-bar">
         <div class="container">
-            <span>🎮 Welcome to Funny Game Box! Play Best Free Casual Games Online! 🎲</span>
+            <span class="announcement">🎮 Welcome to Funny Game Box! Play Best Free Browser Games Online! 🎲</span>
             <nav class="top-nav">
                 <a href="/">Home</a>
                 <a href="/popular.html">Popular</a>
@@ -21,52 +21,113 @@
         </div>
     </header>
 
-    <!-- 主导航 / Logo 区 -->
+    <!-- 2. Logo 头部区域 -->
     <div class="site-header container">
         <a href="/" class="logo">
             <span class="logo-icon">🎮</span> FUNNY GAME BOX
         </a>
     </div>
 
-    <!-- 分类导航栏 (红框区域) -->
+    <!-- 3. 分类导航栏 (红框区域，所有链接均为根路径) -->
     <nav class="category-nav container">
+        <a href="/" class="tab-item">🔥 Trending Games</a>
         <a href="/casual.html" class="tab-item active">🎯 Casual</a>
         <a href="/driving.html" class="tab-item">🏎️ Driving</a>
         <a href="/puzzle.html" class="tab-item">🧩 Puzzle</a>
         <a href="/action.html" class="tab-item">⚔️ Action</a>
     </nav>
 
-    <!-- 游戏展示区域 -->
+    <!-- 4. 推荐广告/横幅位 (中间空白占位区) -->
+    <div class="hero-banner container">
+        <!-- 如果首页有 Banner 或 AdSense 代码，放在这里 -->
+    </div>
+
+    <!-- 5. 游戏展示列表区 -->
     <main class="main-content container">
         <h2 class="section-title">Casual Games</h2>
         
         <div class="game-grid">
             <!-- 游戏卡片 1 -->
-            <a href="/games/haunted-house-idle.html" class="game-card">
-                <img src="images/haunted-house-idle.jpg" alt="Haunted House Idle" loading="lazy">
-                <span class="game-title">Haunted House Idle</span>
+            <a href="/games/taxi-rush.html" class="game-card">
+                <img src="/images/taxi-rush.jpg" alt="Taxi Rush" loading="lazy">
+                <span class="game-title">Taxi Rush</span>
             </a>
 
             <!-- 游戏卡片 2 -->
-            <a href="/games/heaven-and-hell-idle.html" class="game-card">
-                <img src="images/heaven-and-hell-idle.jpg" alt="Heaven & Hell Idle" loading="lazy">
-                <span class="game-title">Heaven & Hell Idle</span>
+            <a href="/games/haunted-house-idle.html" class="game-card">
+                <img src="/images/haunted-house-idle.jpg" alt="Haunted House Idle" loading="lazy">
+                <span class="game-title">Haunted House Idle</span>
             </a>
 
             <!-- 游戏卡片 3 -->
+            <a href="/games/car-driving-master.html" class="game-card">
+                <img src="/images/car-driving-master.jpg" alt="Car Driving Master" loading="lazy">
+                <span class="game-title">Car Driving Master</span>
+            </a>
+
+            <!-- 游戏卡片 4 -->
+            <a href="/games/granny-house.html" class="game-card">
+                <img src="/images/granny-house.jpg" alt="Granny House" loading="lazy">
+                <span class="game-title">Granny House</span>
+            </a>
+
+            <!-- 游戏卡片 5 -->
+            <a href="/games/scary-granny.html" class="game-card">
+                <img src="/images/scary-granny.jpg" alt="Scary Granny" loading="lazy">
+                <span class="game-title">Scary Granny</span>
+            </a>
+
+            <!-- 游戏卡片 6 -->
             <a href="/games/agent-smith.html" class="game-card">
-                <img src="images/agent-smith.jpg" alt="Agent Smith" loading="lazy">
+                <img src="/images/agent-smith.jpg" alt="Agent Smith" loading="lazy">
                 <span class="game-title">Agent Smith</span>
             </a>
 
-            <!-- 更多 Casual 游戏按同样结构添加... -->
+            <!-- 游戏卡片 7 -->
+            <a href="/games/pixel-zombie-base.html" class="game-card">
+                <img src="/images/pixel-zombie-base.jpg" alt="Pixel Zombie Base" loading="lazy">
+                <span class="game-title">Pixel Zombie Base</span>
+            </a>
+
+            <!-- 游戏卡片 8 -->
+            <a href="/games/wuggy-shooting-gun.html" class="game-card">
+                <img src="/images/wuggy-shooting-gun.jpg" alt="Wuggy Shooting Gun" loading="lazy">
+                <span class="game-title">Wuggy Shooting Gun</span>
+            </a>
+
+            <!-- 游戏卡片 9 -->
+            <a href="/games/heaven-and-hell-idle.html" class="game-card">
+                <img src="/images/heaven-and-hell-idle.jpg" alt="Heaven & Hell Idle" loading="lazy">
+                <span class="game-title">Heaven & Hell Idle</span>
+            </a>
+
+            <!-- 游戏卡片 10 -->
+            <a href="/games/survival-craft.html" class="game-card">
+                <img src="/images/survival-craft.jpg" alt="Survival Craft" loading="lazy">
+                <span class="game-title">Survival Craft</span>
+            </a>
+
+            <!-- 游戏卡片 11 -->
+            <a href="/games/shadowgun-war.html" class="game-card">
+                <img src="/images/shadowgun-war.jpg" alt="Shadowgun War" loading="lazy">
+                <span class="game-title">Shadowgun War</span>
+            </a>
+
+            <!-- 游戏卡片 12 -->
+            <a href="/games/counter-craft.html" class="game-card">
+                <img src="/images/counter-craft.jpg" alt="Counter Craft" loading="lazy">
+                <span class="game-title">Counter Craft</span>
+            </a>
         </div>
     </main>
 
-    <!-- 页脚关于区域 -->
+    <!-- 6. 底部介绍文字块 -->
     <footer class="site-footer container">
-        <h3>About Casual Games on Funny Game Box</h3>
-        <p>Explore our wide collection of free online casual games! Simple to play, relaxing, and playable instantly on desktop, tablet, or mobile without any downloads.</p>
+        <div class="about-block">
+            <h3>About Funny Game Box</h3>
+            <p>Welcome to <strong>Funny Game Box</strong>, your ultimate destination for playing the best free online games and unblocked mini games! We offer a wide variety of HTML5 browser games including action, driving, puzzle, shooting, and 2-player games that you can play instantly on desktop, tablet, or mobile devices.</p>
+            <p>All games on Funny Game Box are 100% free with no downloads, installs, or registration required. Bookmark our site and enjoy seamless gaming anytime, anywhere!</p>
+        </div>
         <div class="copyright">
             &copy; 2026 Funny Game Box. All rights reserved. | <a href="https://funnygamebox.com">funnygamebox.com</a>
         </div>
